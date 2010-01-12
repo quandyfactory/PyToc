@@ -23,7 +23,15 @@ Released under the GNU General Public Licence, Version 2:
 
 ## Revision History
 
-### Version: 0.2
+### Version: 0.21
+
+* Release Date: 2010-01-11
+
+* Changes:
+
+    * Fixed HTML rendering error in format_contents()
+    
+    ### Version: 0.2
 
 * Release Date: 2010-01-11
 

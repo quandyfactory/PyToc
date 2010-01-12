@@ -4,7 +4,7 @@
 This code takes an HTML page and generates a table of contents.
 """
 
-__version__ = '0.2'
+__version__ = '0.21'
 __releasedate__ = '2010-01-11'
 __author__ = 'Ryan McGreal <ryan@quandyfactory.com>'
 __homepage__ = 'http://quandyfactory.com/projects/40/pytoc'
@@ -89,8 +89,8 @@ def format_contents(toc_list, levels=[3, 4], id="toc"):
                 )
         else:
             for loop in range(dots):
-                addline('<td class="%s_section_number"></a>' % (id))
-            addline('<td class="%s_section_number">%s</a>' % (id, t[0]))
+                addline('<td class="%s_section_number"></td>' % (id))
+            addline('<td class="%s_section_number">%s</td>' % (id, t[0]))
             addline('<td colspan="%s"><a href="#%s_%s">%s</a></td>' % (len(levels)-dots, id, t[0], t[1]))
         addline('</tr>')
     addline('</table>')
