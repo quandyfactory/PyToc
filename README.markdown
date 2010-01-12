@@ -6,13 +6,14 @@ Takes an HTML page and generates a table of contents.
 
 * Author: Ryan McGreal
 * Email: [ryan@quandyfactory.com](mailto:ryan@quandyfactory.com)
+* Homepage: [http://quandyfactory.com/projects/40/pytoc](http://quandyfactory.com/projects/40/pytoc)
 * Repository: [http://github.com/quandyfactory/PyToc](http://github.com/quandyfactory/PyToc)
 
 ## Licence
 
 Released under the GNU General Public Licence, Version 2:
 
-[http://www.gnu.org/licenses/old-licenses/gpl-2.0.html]
+[http://www.gnu.org/licenses/old-licenses/gpl-2.0.html](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 ## This Version
 
