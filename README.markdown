@@ -5,10 +5,8 @@ Takes an HTML page and generates a table of contents.
 ## Author
 
 * Author: Ryan McGreal
-
-* Email: [ryan@quandyfactory.com][1]
-
-* Repository: [http://github.com/quandyfactory/PyToc]
+* Email: [ryan@quandyfactory.com](mailto:ryan@quandyfactory.com)
+* Repository: [http://github.com/quandyfactory/PyToc](http://github.com/quandyfactory/PyToc)
 
 ## Licence
 
