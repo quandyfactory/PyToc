@@ -125,6 +125,6 @@ After calling the make_toc() method, the following output properties are populat
 
 * html_toc - The generated HTML table of contents.
 
-* toc_list - The list of anchors and headings if you would rather roll your own HTML table of contents.    
+* toc_list - A list of tuples containing the anchors and headings, in case you would rather roll your own HTML table of contents. 
 
 That's it, really.
