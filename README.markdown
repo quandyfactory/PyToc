@@ -94,18 +94,27 @@ Here's a demonstration:
 The following are input properties you enter to generate the table of contens.
 
 * html_in - The HTML document for which you want to generate a table of contents.
+
     This is the only necessary property to assign. The rest have default values that may meet your needs.
+
 * levels - A list of numbers corresponding to the heading levels you want to include in your TOC.
-    E.g. [3, 4] would include <h3> and <h4> headings.
+
+    E.g. [3, 4] would include `<h3>` and `<h4>` headings.
+
     Default is [3, 4].
+
 * id - The base id of the HTML table of contents to be generated.
+
     Default is "toc".
+
 * title - The title of the generated table of contents.
+
     Default is "Contents".
 
 ####Methods
 
 * make_toc() - this generates the table of contents and populates the output properties. 
+
     Returns True when complete.
 
 ####Output Properties
@@ -113,5 +122,9 @@ The following are input properties you enter to generate the table of contens.
 After calling the make_toc() method, the following output properties are populated with values.
 
 * html_out - The same as html_in except with the TOC anchors and numbering included in the headings.
+
 * html_toc - The generated HTML table of contents.
+
 * toc_list - The list of anchors and headings if you would rather roll your own HTML table of contents.    
+
+That's it, really.
