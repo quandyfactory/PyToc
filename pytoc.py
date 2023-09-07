@@ -87,7 +87,7 @@ class Toc:
             # update heading with anchor
             heading.find(text=heading.string).replaceWith('<a href="#%s_%s" title="Link directly to section %s">%s</a><a name="%s_%s"></a> <span title="Section %s: %s">%s</span> <a href="#" title="Back to top"> &uarr; </a>' % (self.id, this_toc_anchor, this_toc_anchor, this_toc_anchor, self.id, this_toc_anchor, this_toc_anchor, heading.string, heading.string))
         
-        self.html_out = str(soup).replace('&lt;', '<').replace('&gt;', '>')
+        self.html_out = str(soup).replace('&lt;', '<').replace('&gt;', '>').replace('&amp;uarr;', '&uarr;')
         self.html_toc = self.format_contents()
 
         return
@@ -108,8 +108,9 @@ class Toc:
         """
         html = []
         addline = html.append
-        addline('<h2><a name="%s">%s</a></h2>' % (self.id, self.title))
+        #addline('<h2><a name="%s">%s</a></h2>' % (self.id, self.title))
         addline('<table id="%s_table">' % (self.id))
+        addline('<caption>%s</caption>' % (self.title))
         for t in self.toc_list:
             addline('<tr>')
             dots = self.count_chars(t[0], '.')
