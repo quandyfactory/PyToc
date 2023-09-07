@@ -4,15 +4,15 @@
 This code takes an HTML page and generates a table of contents.
 """
 
-__version__ = '0.3'
-__releasedate__ = '2010-01-18'
+__version__ = '0.4'
+__releasedate__ = '2023-09-07'
 __author__ = 'Ryan McGreal <ryan@quandyfactory.com>'
 __homepage__ = 'http://quandyfactory.com/projects/40/pytoc'
 __repository__ = 'http://github.com/quandyfactory/PyToc'
 __copyright__ = 'Copyright (C) 2010 by Ryan McGreal. Licenced under GPL version 2. http://www.gnu.org/licenses/gpl-2.0.html'
 
 
-from BeautifulSoup import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 import re
 
 class Toc:
@@ -87,10 +87,10 @@ class Toc:
             # update heading with anchor
             heading.find(text=heading.string).replaceWith('<a href="#%s_%s" title="Link directly to section %s">%s</a><a name="%s_%s"></a> <span title="Section %s: %s">%s</span> <a href="#" title="Back to top"> &uarr; </a>' % (self.id, this_toc_anchor, this_toc_anchor, this_toc_anchor, self.id, this_toc_anchor, this_toc_anchor, heading.string, heading.string))
         
-        self.html_out = str(soup)
+        self.html_out = str(soup).replace('&lt;', '<').replace('&gt;', '>')
         self.html_toc = self.format_contents()
 
-        return True
+        return
  
     def count_chars(self, string, char):
         """
@@ -124,6 +124,6 @@ class Toc:
                 addline('<td colspan="%s"><a href="#%s_%s">%s</a></td>' % (len(self.levels)-dots, self.id, t[0], t[1]))
             addline('</tr>')
         addline('</table>')
-        return '\n'.join(html)
+        return ''.join(html)
         
     
