@@ -17,11 +17,19 @@ Released under the GNU General Public Licence, Version 2:
 
 ## This Version
 
-* Version: 0.3
+* Version: 0.4
 
-* Release Date: 2010-01-18
+* Release Date: 2023-09-07
 
 ## Revision History
+
+### Version: 0.4
+
+* Release Date: 2023-09-07
+
+* Changes:
+
+    * Fixed bug based on differences between Python2 and Python3.
 
 ### Version: 0.3
 
