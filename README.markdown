@@ -17,11 +17,19 @@ Released under the GNU General Public Licence, Version 2:
 
 ## This Version
 
-* Version: 0.4
+* Version: 0.5
 
-* Release Date: 2023-09-07
+* Release Date: 2024-07-04
 
 ## Revision History
+
+### Version: 0.5
+
+* Release Date: 2024-07-04
+
+* Changes:
+
+    * Added features argument to bs function call
 
 ### Version: 0.4
 
