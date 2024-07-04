@@ -4,8 +4,8 @@
 This code takes an HTML page and generates a table of contents.
 """
 
-__version__ = '0.4'
-__releasedate__ = '2023-09-07'
+__version__ = '0.5'
+__releasedate__ = '2024-07-04'
 __author__ = 'Ryan McGreal <ryan@quandyfactory.com>'
 __homepage__ = 'http://quandyfactory.com/projects/40/pytoc'
 __repository__ = 'http://github.com/quandyfactory/PyToc'
@@ -59,7 +59,7 @@ class Toc:
         numbering = [[level, 0] for level in self.levels]
 
         # take a beautifulsoup parse tree of the html
-        soup = bs(self.html_in)
+        soup = bs(self.html_in, features='html.parser')
  
         # generate a regex to find headings for the table of contents
         heading_regex = '|'.join([str(level) for level in self.levels])
