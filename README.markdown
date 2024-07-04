@@ -1,4 +1,4 @@
-#PyToc
+# PyToc
 
 Takes an HTML page and generates a table of contents.
 
@@ -105,7 +105,7 @@ Here's a demonstration:
     toc.html_out # returns the html with anchors and numbering in headings
     toc.toc_list # returns a list of tuples in the form (section number, title)
 
-####Input Properties
+#### Input Properties
 
 The following are input properties you enter to generate the table of contens.
 
@@ -127,13 +127,13 @@ The following are input properties you enter to generate the table of contens.
 
     Default is "Contents".
 
-####Methods
+#### Methods
 
 * make_toc() - this generates the table of contents and populates the output properties. 
 
     Returns True when complete.
 
-####Output Properties
+#### Output Properties
 
 After calling the make_toc() method, the following output properties are populated with values.
 
